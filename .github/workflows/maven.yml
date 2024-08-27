@@ -21,8 +21,8 @@ jobs:
 
     - name: Push Docker Image
       run: |
-          docker pull swapi123/eks:latest
-          docker tag swapi123/eks:latest swapi123/eksProd123:latest
+          docker pull swapi123/eksmulti:latest
+          docker tag swapi123/eksmulti:latest swapi123/eksProd123:latest
           docker push swapi123/eksProd123:latest
     - name: Kubectl Action
       uses: tale/kubectl-action@v1
